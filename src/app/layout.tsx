@@ -1,6 +1,5 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google"; 
-
+import { Inter } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
 
 // Use Inter font with a variable for font-weight support
@@ -10,21 +9,25 @@ const inter = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Get Global",
   description: "Building the future of Software Development",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
-        {children}
-      </body>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+      </Head>
+      <body className={`${inter.variable} antialiased`}>{children}</body>
     </html>
   );
 }
