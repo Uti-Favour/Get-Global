@@ -11,7 +11,7 @@ const Hero = () => {
         <div className='mt-20'>
           <div className='space-y-10'>
           <h1 className='text-blue-700 text-center lg:text-left lg:text-7xl text-4xl font-black'>Dream. Explore. Discover. Repeat.</h1>
-            <p className='text-gray-500 text-center lg:text-left lg:max-w-[70%]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem natus quos, accusantium repellendus facere pariatur aperiam ullam id quasi vitae vel odit dicta consequatur porro molestias a magnam rerum!</p>
+            <p className='text-gray-500 text-center lg:text-left lg:max-w-[70%]'> We craft personalized journeys, taking care of every detail so you can enjoy a seamless adventure. From exotic getaways to cultural explorations, we make your travel dreams a reality. </p>
             <div className='text-black space-x-4 text-center lg:flex-row flex-col flex'>
                 <Link href={'google.com'} className='py-3 px-10 bg-blue-700 text-white rounded-3xl'>Book Consultation <i className="fa-solid fa-arrow-right-long ml-1"></i>
 
