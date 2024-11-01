@@ -1,7 +1,6 @@
 import services from '@/constant/services'
 import Link from 'next/link'
 import React from 'react'
-import { motion } from 'framer-motion'
 const Services = () => {
   return (
     <>
