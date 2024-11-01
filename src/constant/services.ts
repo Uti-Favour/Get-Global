@@ -2,7 +2,7 @@ const services = [
     {
       heading: "Flight Booking",
       description: "Book flights at competitive rates with ease, choosing from a variety of airlines and schedules.",
-      icon: "fa-solid fa-plane"
+      icon: "fa-solid fa-plane bg-blue-600"
     },
     {
       heading: "Hotel Reservations",
