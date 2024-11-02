@@ -1,21 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import logo from '..//../public/get_logo.png'
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-white py-12 px-4 mt-20">
+    <footer className="w-full bg-[#F2F2F2] py-12 px-4 mt-20">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info Column */}
           <div className="space-y-6">
             <div className="text-indigo-600">
-              <svg 
-                viewBox="0 0 24 24" 
-                className="h-8 w-8"
-                fill="currentColor"
-              >
-                <path d="M12 4c1.11 0 2.17.44 2.95 1.22l4.83 4.83c.39.39.39 1.02 0 1.41l-4.83 4.83c-.78.78-1.84 1.22-2.95 1.22s-2.17-.44-2.95-1.22L4.22 11.46c-.39-.39-.39-1.02 0-1.41l4.83-4.83C9.83 4.44 10.89 4 12 4z" />
-              </svg>
+              <Image src={logo} width={100} height={100} alt='Get Global Logo'/>
             </div>
             <p className="text-gray-600 max-w-xs">
               Making traveling easier than you think with Get Global Traveling Agency.
