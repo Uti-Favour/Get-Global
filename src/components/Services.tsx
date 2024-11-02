@@ -4,12 +4,12 @@ import React from 'react'
 const Services = () => {
   return (
     <>
-     <div className='text-black mt-32'>
+     <div className='text-black mt-32' id='services'>
   <h1 className='flex justify-center text-center font-bold text-4xl mx-5 lg:text-7xl text-blue-600'>
     Have a look at what we have to offer
   </h1>
   <p className='flex justify-center lg:mx-64 mx-5 text-center text-gray-500 mt-4'>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis saepe rerum, dolorum rem quisquam repellat eaque quis quam quo, accusantium autem. Beatae, alias sint! Qui cupiditate numquam ea aperiam eaque ab earum.
+  Explore our range of offerings tailored to make your experience exceptional. From personalized services to top-tier products, we have something for everyone. 
   </p>
 </div>
 <div className='lg:grid grid-cols-3 gap-6 space-y-10 lg:space-y-0 mx-5 text-black lg:mt-20 mt-10'>

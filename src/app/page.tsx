@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero'
 import Services from '@/components/Services';
 import AppLaunch from '@/components/AppLaunch';
+import Footer from '@/components/Footer';
 
 
 
@@ -14,6 +15,7 @@ const Home = () => {
       <Hero/>
       <Services/>
       <AppLaunch/>
+      <Footer/>
     </div>
   )
 }

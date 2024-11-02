@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import plane from '../../public/plane_image.jpg'
+import hero_image from '../../public/Hero Image.jpg'
 
 
 const Hero = () => {
@@ -13,9 +13,9 @@ const Hero = () => {
           <h1 className='text-blue-700 text-center lg:text-left lg:text-7xl text-4xl font-black'>Dream. Explore. Discover. Repeat.</h1>
             <p className='text-gray-500 text-center lg:text-left lg:max-w-[70%]'> We craft personalized journeys, taking care of every detail so you can enjoy a seamless adventure. From exotic getaways to cultural explorations, we make your travel dreams a reality. </p>
             <div className='text-black space-x-4 text-center lg:flex-row flex-col flex'>
-                <Link href={'google.com'} className='py-3 px-10 bg-blue-700 text-white rounded-3xl'>Book Consultation <i className="fa-solid fa-arrow-right-long ml-1"></i>
+                <a href={'https://wa.me/message/XP53SSNGNKAJA1'} className='py-3 px-10 bg-blue-700 text-white rounded-3xl'>Book Consultation <i className="fa-solid fa-arrow-right-long ml-1"></i>
 
-                </Link>      
+                </a>      
                 <Link href={'google.com'} className='py-3 px-10 bg-[#F1F2F4] text-blue-500 rounded-3xl lg:block hidden'>View Features</Link>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
 
         <div className='lg:mt-0 mt-10'>
-            <Image src={plane} width={950} height={500} alt='plane image' className='rounded-3xl max-h-[95vh]'/>
+            <Image src={hero_image} width={950} height={500} alt='plane image' className='rounded-3xl max-h-[95vh]'/>
         </div> 
     </div>
     </>
