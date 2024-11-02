@@ -12,7 +12,7 @@ const Services = () => {
   Explore our range of offerings tailored to make your experience exceptional. From personalized services to top-tier products, we have something for everyone. 
   </p>
 </div>
-<div className='lg:grid grid-cols-3 gap-6 space-y-10 lg:space-y-0 mx-5 text-black lg:mt-20 mt-10'>
+<div className='lg:grid grid-cols-3 gap-6 space-y-10 lg:space-y-0 ml-6 text-black lg:mt-20 mt-10'>
   {services.map((service) => (
     <div key={service.heading} className='lg:mx-20'>
       <div className='bg-[#004882] text-white rounded-full w-14 h-14 flex items-center justify-center'>
