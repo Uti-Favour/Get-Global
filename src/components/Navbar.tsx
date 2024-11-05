@@ -65,7 +65,7 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="text-blue-600 hover:bg-blue-100 hover:text-blue-800 block px-3 py-2 rounded-md text-base  font-medium  items-center"
+                  className="text-[#004882] hover:bg-blue-100 hover:text-blue-800 block px-3 py-2 rounded-md text-base  font-medium  items-center"
                 >
                 
                   {link.name}
