@@ -3,7 +3,7 @@ import React from 'react';
 const Features = () => {
     return (
         <>
-            <div className='grid lg:grid-cols-3 gap-10 lg:mx-20 mx-5 mt-20'>
+            <div className='grid lg:grid-cols-3 gap-10 lg:mx-18 mx-5 mt-20'>
                 <div className='bg-blue-500 rounded-3xl p-10 lg:col-span-2'>
                     <h1 className='lg:text-5xl text-3xl max-w-2xl text-white'>Explore the World with Tailored Travel Experiences</h1>
                     <p className='mt-5 text-gray-200'>Discover unforgettable destinations, curated just for you. From adventure-packed journeys to relaxing getaways, we offer custom travel experiences that make every moment memorable.</p>
