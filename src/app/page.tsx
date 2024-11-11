@@ -5,7 +5,7 @@ import Hero from '@/components/Hero'
 import Services from '@/components/Services';
 import Footer from '@/components/Footer';
 import Offers from '@/components/Offers';
-
+import Features from '@/components/Features';
 
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
     <div>
       <Navbar/>
       <Hero/>
-      <Services/>
+      <Features/>
       <Offers/>
       <Footer/>
     </div>

@@ -5,7 +5,7 @@ import logo from '..//../public/get_logo.png'
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#F2F2F2] py-12 px-4 mt-20">
+    <footer className="w-full bg-white py-12 px-4 mt-20">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info Column */}
