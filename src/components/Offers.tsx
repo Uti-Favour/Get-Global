@@ -3,7 +3,7 @@ import React from 'react'
 const Offers = () => {
     return (
         <>
-            <div className='bg-[#edefeb] py-8 mt-16'>
+            <div className='bg-[#edefeb] py-8 '>
                 {/* <div className='mt-20 grid grid-cols-3 mx-20 space-x-10'>
                     <div className='p-10 col-span-2 rounded-3xl'></div>
                     <div className='p-10 bg-pink-200 rounded-3xl'></div>
