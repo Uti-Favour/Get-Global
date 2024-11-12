@@ -1,5 +1,4 @@
 import services from '@/constant/services'
-import Link from 'next/link'
 import React from 'react'
 const Services = () => {
   return (
@@ -14,7 +13,7 @@ const Services = () => {
 </div>
 <div className='lg:grid grid-cols-3 gap-6 space-y-10 lg:space-y-0 mx-5 text-black lg:mt-20 mt-10'>
   {services.map((service) => (
-   <div className='bg-[#054378] rounded-3xl'>
+   <div className='bg-[#054378] rounded-3xl' key={service.heading}>
    <div className='p-8'>
        <div className='bg-white text-[#054378] rounded-full w-14 h-14 flex items-center justify-center'>
            <i className={service.icon}></i>
