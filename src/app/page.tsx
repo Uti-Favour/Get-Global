@@ -6,7 +6,7 @@ import Hero from '@/components/Hero'
 import Footer from '@/components/Footer';
 import Offers from '@/components/Offers';
 import Services from '@/components/Services';
-import TestimonialCarousel from '@/components/Testimonia';
+import TestimonialSlider from '@/components/Testimonia';
 
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
       <Navbar/>
       <Hero/>
       <Services/>
-      <TestimonialCarousel/>
+      <TestimonialSlider/>
       <Offers/>
       <Footer/>
     </div>

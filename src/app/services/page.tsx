@@ -36,8 +36,9 @@ const services = () => {
           {/* <span className='text-[#054378] font-bold'>Future of Travel</span> */}
           <h1 className='lg:text-5xl text-4xl text-[#054378] font-semibold max-w-xl'>Title for service section</h1>
           <p className='max-w-xl text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus animi aliquid asperiores, magni nobis modi consequatur ex veniam corporis qui mollitia neque fugiat commodi ullam, dignissimos alias molestias ab atque.</p>
-          <div className='space-x-4'>
-          <button className='py-3 lg:px-10 px-28 rounded-3xl bg-[#054378] text-white'>See our offers</button>
+          <div className='lg:space-x-4'>
+          <button className='py-3 px-8 rounded-3xl bg-[#054378] text-white'>See our offers</button>
+          <button className='py-3 px-5 underline rounded-3xl border-[#054378] text-gray-600'>Learn More</button>
         </div>
         </div>
         <div className='lg:mt-0 mt-10'>
