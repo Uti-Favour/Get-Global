@@ -59,8 +59,8 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="mx-auto px-4 py-10 mt-10">
-      <h2 className="lg:text-5xl text-3xl font-bold mb-16 text-blue-900 ml-5 lg:max-w-xl">
+    <div className="mx-auto px-4 py-8 lg:mt-16 mt-8">
+      <h2 className="lg:text-5xl text-3xl font-bold mb-10 text-blue-900 ml-5 lg:max-w-xl">
         Hear the testimony of our loyal customers.
       </h2>
       
