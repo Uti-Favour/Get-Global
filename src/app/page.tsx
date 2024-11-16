@@ -6,7 +6,6 @@ import Hero from '@/components/Hero'
 import Footer from '@/components/Footer';
 import Offers from '@/components/Offers';
 import Services from '@/components/Services';
-import AppLaunch from '@/components/AppLaunch';
 import TestimonialCarousel from '@/components/Testimonia';
 
 
