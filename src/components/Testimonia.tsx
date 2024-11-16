@@ -1,37 +1,41 @@
 import React, { useState, useEffect } from 'react';
 
 const testimonials = [
-  {
-    id: 1,
-    name: "Sophia Martinez",
-    role: "Travel Enthusiast",
-    quote: "Get Global made my dream vacation a reality! Their personalized recommendations and seamless booking process were truly remarkable.",
-    metrics: [
-      { label: "Destinations Visited", value: "12" },
-      { label: "Customer Rating", value: "5/5" }
-    ]
-  },
-  {
-    id: 2,
-    name: "Liam Johnson",
-    role: "Adventure Seeker",
-    quote: "The team at Get Global is fantastic! From planning to execution, everything was smooth, allowing me to focus on enjoying my journey.",
-    metrics: [
-      { label: "Adventures Completed", value: "8" },
-      { label: "Support Satisfaction", value: "99%" }
-    ]
-  },
-  {
-    id: 3,
-    name: "Emily Chen",
-    role: "Family Traveler",
-    quote: "Our family trip was unforgettable thanks to Get Global. The curated packages and support exceeded all expectations!",
-    metrics: [
-      { label: "Trips Booked", value: "5" },
-      { label: "Family Rating", value: "4.9/5" }
-    ]
-  }
-];
+    {
+      id: 1,
+      name: "Sophia Martinez",
+      role: "Travel Enthusiast",
+      quote: "Get Global made my dream vacation a reality! Their personalized recommendations and seamless booking process were truly remarkable.".replace(/"/g, "&quot;"),
+      metrics: [
+        { label: "Destinations Visited", value: "12" },
+        { label: "Customer Rating", value: "5/5" }
+      ],
+      image: "https://source.unsplash.com/400x300/?beach,vacation"
+    },
+    {
+      id: 2,
+      name: "Liam Johnson",
+      role: "Adventure Seeker",
+      quote: "The team at Get Global is fantastic! From planning to execution, everything was smooth, allowing me to focus on enjoying my journey.".replace(/"/g, "&quot;"),
+      metrics: [
+        { label: "Adventures Completed", value: "8" },
+        { label: "Support Satisfaction", value: "99%" }
+      ],
+      image: "https://source.unsplash.com/400x300/?mountains,adventure"
+    },
+    {
+      id: 3,
+      name: "Emily Chen",
+      role: "Family Traveler",
+      quote: "Our family trip was unforgettable thanks to Get Global. The curated packages and support exceeded all expectations!".replace(/"/g, "&quot;"),
+      metrics: [
+        { label: "Trips Booked", value: "5" },
+        { label: "Family Rating", value: "4.9/5" }
+      ],
+      image: "https://source.unsplash.com/400x300/?family,travel"
+    }
+  ];
+  
 
 const TestimonialSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
