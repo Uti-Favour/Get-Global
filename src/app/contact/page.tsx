@@ -6,15 +6,19 @@ const contact = () => {
     return (
         <>
             <Navbar />
-            <div className='text-black mt-10' id='services'>
-                <h1 className='lg:mx-auto font-bold text-3xl ml-5 lg:text-6xl flex justify-center max-w-4xl lg:text-center  text-[#054378]'>
-                    What we offer at Get Global Traveling Agency.
+            <div className='text-black mt-10 px-5' id='services'>
+                <h1 className='font-bold text-3xl lg:text-6xl flex justify-center text-center max-w-4xl mx-auto text-[#054378]'>
+                    What We Offer at Get Global Traveling Agency
                 </h1>
-                {/* <p className='lg:mx-auto mx-5 text-gray-500 mt-4 lg:text-lg max-w-3xl lg:text-center'>
-                    Explore our range of offerings tailored to make your experience exceptional. From personalized services to top-tier products, we have something for everyone.
-                </p> */}
-
-
+                <div className='mt-10 mx-auto flex justify-center'>
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSeV3VxGsG6iTVv8ODWtnfYno9errG42WIHIFMULU9nTd37ydw/viewform?embedded=true"
+                        className='w-full lg:w-[640px] h-[800px] lg:h-[1332px] border-0'
+                        title='Get Global Contact Form'
+                    >
+                        Loading…
+                    </iframe>
+                </div>
             </div>
             <Footer />
         </>

@@ -13,13 +13,13 @@ const Services = () => {
 </div>
 <div className='lg:grid grid-cols-3 gap-6 space-y-10 lg:space-y-0 mx-5 text-black lg:mt-20 mt-10'>
   {services.map((service) => (
-   <div className='bg-[#054378] rounded-3xl' key={service.heading}>
+   <div className='bg-white rounded-3xl shadow-md' key={service.heading}>
    <div className='p-8'>
        <div className='bg-white text-[#054378] rounded-full w-14 h-14 flex items-center justify-center'>
            <i className={service.icon}></i>
        </div>
-       <h1 className='text-xl text-white font-bold mt-4'>{service.heading}</h1>
-       <p className='max-w-80 text-gray-200 mt-2 mb-5'>{service.description}</p>
+       <h1 className='text-xl text-[#054378] font-bold mt-4'>{service.heading}</h1>
+       <p className='max-w-80 text-gray-600 mt-2 mb-5'>{service.description}</p>
    </div>
 </div>
   ))}
