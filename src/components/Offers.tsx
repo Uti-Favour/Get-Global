@@ -10,7 +10,7 @@ const testimonials = [
       { label: "Destinations Visited", value: "12" },
       { label: "Customer Rating", value: "5/5" }
     ],
-    image: "https://source.unsplash.com/400x300/?beach,vacation"
+    image: "https://source.unsplash.com/100x100/?woman,portrait"
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const testimonials = [
       { label: "Adventures Completed", value: "8" },
       { label: "Support Satisfaction", value: "99%" }
     ],
-    image: "https://source.unsplash.com/400x300/?mountains,adventure"
+    image: "https://source.unsplash.com/100x100/?man,portrait"
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const testimonials = [
       { label: "Trips Booked", value: "5" },
       { label: "Family Rating", value: "4.9/5" }
     ],
-    image: "https://source.unsplash.com/400x300/?family,travel"
+    image: "https://source.unsplash.com/100x100/?family,portrait"
   }
 ];
 
@@ -53,11 +53,11 @@ const TestimonialSlider = () => {
   const maxIndex = testimonials.length - cardsToShow;
 
   const nextTestimonial = () => {
-    setCurrentIndex(prev => Math.min(prev + 1, maxIndex));
+    setCurrentIndex((prev) => Math.min(prev + 1, maxIndex));
   };
 
   const prevTestimonial = () => {
-    setCurrentIndex(prev => Math.max(prev - 1, 0));
+    setCurrentIndex((prev) => Math.max(prev - 1, 0));
   };
 
   return (
@@ -104,12 +104,19 @@ const TestimonialSlider = () => {
                     index % 2 === 0 ? 'bg-blue-800' : 'bg-blue-600'
                   }`}
                 >
-                  <div className="flex flex-col h-full">
-                    <blockquote className="text-white text-xl mb-8 flex-grow">
-                      "{testimonial.quote}"
+                  <div className="flex flex-col h-full items-center">
+                    {/* Circular Image */}
+                    <img
+                      src={testimonial.image}
+                      alt={`${testimonial.name} portrait`}
+                      className="w-20 h-20 rounded-full object-cover mb-4 border-4 border-white shadow-md"
+                    />
+
+                    <blockquote className="text-white text-xl mb-8 flex-grow text-center">
+                      {testimonial.quote}
                     </blockquote>
 
-                    <div className="text-white">
+                    <div className="text-white text-center">
                       <p className="font-semibold text-lg">{testimonial.name}</p>
                       <p className="text-white/80">{testimonial.role}</p>
                     </div>
@@ -122,7 +129,9 @@ const TestimonialSlider = () => {
                             <p className="text-2xl font-bold text-white">
                               {metric.value}
                             </p>
-                            <p className="text-white/80 text-sm">{metric.label}</p>
+                            <p className="text-white/80 text-sm">
+                              {metric.label}
+                            </p>
                           </div>
                         ))}
                       </div>
