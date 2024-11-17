@@ -5,7 +5,7 @@ const testimonials = [
       id: 1,
       name: "Sophia Martinez",
       role: "Travel Enthusiast",
-      quote: "Get Global made my dream vacation a reality! Their personalized recommendations and seamless booking process were truly remarkable.".replace(/"/g, "&quot;"),
+      quote: "Get Global made my dream vacation a reality! Their personalized recommendations and seamless booking process were truly remarkable.",
       metrics: [
         { label: "Destinations Visited", value: "12" },
         { label: "Customer Rating", value: "5/5" }
@@ -16,7 +16,7 @@ const testimonials = [
       id: 2,
       name: "Liam Johnson",
       role: "Adventure Seeker",
-      quote: "The team at Get Global is fantastic! From planning to execution, everything was smooth, allowing me to focus on enjoying my journey.".replace(/"/g, "&quot;"),
+      quote: "The team at Get Global is fantastic! From planning to execution, everything was smooth, allowing me to focus on enjoying my journey.",
       metrics: [
         { label: "Adventures Completed", value: "8" },
         { label: "Support Satisfaction", value: "99%" }
@@ -27,15 +27,14 @@ const testimonials = [
       id: 3,
       name: "Emily Chen",
       role: "Family Traveler",
-      quote: "Our family trip was unforgettable thanks to Get Global. The curated packages and support exceeded all expectations!".replace(/"/g, "&quot;"),
+      quote: "Our family trip was unforgettable thanks to Get Global. The curated packages and support exceeded all expectations!",
       metrics: [
         { label: "Trips Booked", value: "5" },
         { label: "Family Rating", value: "4.9/5" }
       ],
       image: "https://source.unsplash.com/400x300/?family,travel"
     }
-  ];
-  
+];
 
 const TestimonialSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -75,7 +74,7 @@ const TestimonialSlider = () => {
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors"
             aria-label="Previous testimonials"
           >
-            <i className='fas fa-arrow-left w-6 h-6 text-blue-600'></i>
+            <i className="fas fa-arrow-left w-6 h-6 text-blue-600"></i>
           </button>
         )}
         
@@ -85,7 +84,7 @@ const TestimonialSlider = () => {
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white rounded-full p-3 shadow-lg hover:bg-gray-50 transition-colors"
             aria-label="Next testimonials"
           >
-            <i className='fas fa-arrow-right w-6 h-6 text-blue-600'></i>
+            <i className="fas fa-arrow-right w-6 h-6 text-blue-600"></i>
           </button>
         )}
 
@@ -106,7 +105,7 @@ const TestimonialSlider = () => {
                 }`}>
                   <div className="flex flex-col h-full">
                     <blockquote className="text-white text-xl mb-8 flex-grow">
-                      "{testimonial.quote}"
+                      &ldquo;{testimonial.quote}&rdquo;
                     </blockquote>
                     
                     <div className="text-white">
